@@ -1,21 +1,22 @@
-" Last Modified:   sáb 14 mai 2011 11:22:36  E. South America Standard Time.
+" Last Modified: qui 23 jun 2011 06:57:12  E. South America Standard Time
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
 "    VIM 7.3
+"    Python 2.7
 "    cscope
 "    exuberant-ctags
 "    pyflakes
-"    wmctrl
+"    wmctrl (for the shell plugin)
 "
 "  2 Windows - on windows use vimfiles instead of .vim. Requirements are:
 "    VIM 7.3 (official distribution)
-"    python 2.7
-"    DejaVu Sans Mono fonts (Use  :set gfn?  to check current font)
+"    Python 2.7
+"    mingw32 (with mingw32-make)
+"    dejavu-fonts-ttf-2.33.zip (DejaVu Sans Mono fonts)
 "    cscope-15.7a-win32rev18-static.zip (cscope)
 "    ctags58.zip (ectags)
-"    pyflakes
-"    mingw32 (with mingw32-make)
+"    pyflakes-0.3.0.tar.gz (pyflakes)
 "
 " == TIPS ==
 "  1. Multi-buffer replace:
@@ -104,10 +105,16 @@ else
 		endif
 	endif
 
+
+	" Timestap fix
+	let timestamp_regexp = '\v\C%(<Last %([cC]hanged?|[Mm]odified):\s+)@<=.*$'
+
+
 	" Invisible chars
 	set listchars=tab:»\ ,eol:¬
 	highlight NonText guifg=#4a4a59
 	highlight SpecialKey guifg=#4a4a59
+
 
 	" Font and GUI options
 	if has("gui_running")
@@ -153,10 +160,6 @@ else
 		endfunction
 		autocmd BufNewFile *.{h,hpp} call <SID>insert_gates()
 	endif
-
-
-	" conque plugin
-	let g:ConqueTerm_ExecFileKey = '<C-F11>'
 
 
 	" MiniBufExplorer plugin
