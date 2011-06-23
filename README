@@ -1,0 +1,13 @@
+Installation
+============
+
+1. Clone
+	git clone git://github.com/brunocedraz/dotvim.git ~/.vim
+
+2. Create symlink
+	ln -s ~/.vim/vimrc ~/.vimrc
+
+3. Load submodules
+	cd ~/.vim
+	git submodule init
+	git submodule update
