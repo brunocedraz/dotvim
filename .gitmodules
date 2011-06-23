@@ -1,0 +1,72 @@
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/vim-fswitch"]
+	path = bundle/vim-fswitch
+	url = git://github.com/ewiplayer/vim-fswitch.git
+[submodule "bundle/EnhancedCommentify"]
+	path = bundle/EnhancedCommentify
+	url = git://github.com/hrp/EnhancedCommentify.git
+[submodule "bundle/vim-matchit"]
+	path = bundle/vim-matchit
+	url = git://github.com/mhz/vim-matchit.git
+[submodule "bundle/snipmate.vim"]
+	path = bundle/snipmate.vim
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = git://github.com/Raimondi/delimitMate.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = git://github.com/sjl/gundo.vim.git
+[submodule "bundle/vim-sparkup"]
+	path = bundle/vim-sparkup
+	url = git://github.com/sjl/vim-sparkup.git
+[submodule "bundle/vim-l9"]
+	path = bundle/vim-l9
+	url = git://github.com/slack/vim-l9.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-align"]
+	path = bundle/vim-align
+	url = git://github.com/tsaleh/vim-align.git
+[submodule "bundle/blackboard.vim"]
+	path = bundle/blackboard.vim
+	url = git://github.com/vim-scripts/blackboard.vim.git
+[submodule "bundle/DoxygenToolkit.vim"]
+	path = bundle/DoxygenToolkit.vim
+	url = git://github.com/vim-scripts/DoxygenToolkit.vim.git
+[submodule "bundle/FuzzyFinder"]
+	path = bundle/FuzzyFinder
+	url = git://github.com/vim-scripts/FuzzyFinder.git
+[submodule "bundle/minibufexpl.vim"]
+	path = bundle/minibufexpl.vim
+	url = git://github.com/vim-scripts/minibufexpl.vim.git
+[submodule "bundle/python_check_syntax.vim"]
+	path = bundle/python_check_syntax.vim
+	url = git://github.com/vim-scripts/python_check_syntax.vim.git
+[submodule "bundle/taglist.vim"]
+	path = bundle/taglist.vim
+	url = git://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/timestamp.vim"]
+	path = bundle/timestamp.vim
+	url = git://github.com/vim-scripts/timestamp.vim.git
+[submodule "bundle/VisIncr"]
+	path = bundle/VisIncr
+	url = git://github.com/vim-scripts/VisIncr.git
+[submodule "bundle/Zenburn"]
+	path = bundle/Zenburn
+	url = git://github.com/vim-scripts/Zenburn.git
+[submodule "bundle/vim-irblack"]
+	path = bundle/vim-irblack
+	url = git://github.com/wgibbs/vim-irblack.git
+[submodule "bundle/vim-shell"]
+	path = bundle/vim-shell
+	url = git://github.com/xolox/vim-shell.git
