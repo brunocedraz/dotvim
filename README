@@ -2,23 +2,27 @@ Installation
 ============
 
 1. Clone
- linux:
+  linux:
 	git clone git://github.com/brunocedraz/dotvim.git ~/.vim
- windows (git bash):
+
+  windows (git bash):
 	git clone git://github.com/brunocedraz/dotvim.git ~/vimfiles
 
 
 2. Create symlink
- linux:
+  linux:
 	ln -s ~/.vim/vimrc ~/.vimrc
- windows (cmd):
+
+  windows (cmd):
  	mklink /H .vimrc vimfiles\vimrc
+
 
 3. Load submodules
   linux:
 	cd ~/.vim
 	git submodule init
 	git submodule update
+
   windows (git bash):
 	cd ~/vimfiles
 	git submodule init
