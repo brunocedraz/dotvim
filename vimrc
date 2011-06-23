@@ -75,6 +75,9 @@ if version < 700
 	set noloadplugins
 else
         filetype off 
+	if !has("python")
+		let g:pathogen_disabled=['taglist.vim', 'python_check_syntax.vim']
+	endif
         call pathogen#helptags()
         call pathogen#runtime_append_all_bundles()
 	filetype on
