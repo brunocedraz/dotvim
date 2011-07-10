@@ -1,4 +1,4 @@
-" Last Modified: dom 10 jul 2011 12:23:07  E. South America Standard Time
+" Last Modified: dom 10 jul 2011 12:37:37  E. South America Standard Time
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -77,7 +77,7 @@ if version < 700
 else
         filetype off 
 	if !has("python")
-		let g:pathogen_disabled=['taglist.vim', 'python_check_syntax.vim']
+		let g:pathogen_disabled=['taglist.vim', 'custom']
 	endif
         call pathogen#helptags()
         call pathogen#runtime_append_all_bundles()
