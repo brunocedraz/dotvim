@@ -1,4 +1,4 @@
-" Last Modified: qui 23 jun 2011 06:57:12  E. South America Standard Time
+" Last Modified: sáb 09 jul 2011 11:59:53  E. South America Standard Time
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -233,6 +233,8 @@ else
 	nnoremap <silent> <Leader>fq :FufQuickfix<cr>
 	nnoremap <silent> <Leader>fl :FufLine<cr>
 	nnoremap <silent> <Leader>fh :FufHelp<cr>
+	map <silent> <Leader>[ :MBEbp<cr>
+	map <silent> <Leader>] :MBEbn<cr>
 	vnoremap > >gv
 	vnoremap < <gv
 	if has("autocmd")

@@ -49,9 +49,6 @@
 [submodule "bundle/minibufexpl.vim"]
 	path = bundle/minibufexpl.vim
 	url = git://github.com/vim-scripts/minibufexpl.vim.git
-[submodule "bundle/python_check_syntax.vim"]
-	path = bundle/python_check_syntax.vim
-	url = git://github.com/vim-scripts/python_check_syntax.vim.git
 [submodule "bundle/taglist.vim"]
 	path = bundle/taglist.vim
 	url = git://github.com/vim-scripts/taglist.vim.git

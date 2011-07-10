@@ -14,7 +14,7 @@ Installation
 	ln -s ~/.vim/vimrc ~/.vimrc
 
   windows (cmd):
- 	mklink /H .vimrc vimfiles\vimrc
+ 	mklink .vimrc vimfiles\vimrc
 
 
 3. Load submodules
