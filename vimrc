@@ -1,4 +1,4 @@
-" Last Modified: sáb 09 jul 2011 11:59:53  E. South America Standard Time
+" Last Modified: dom 10 jul 2011 12:23:07  E. South America Standard Time
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -90,6 +90,17 @@ else
 	set sessionoptions+=resize
 	set sessionoptions+=unix,slash
 	set omnifunc=syntaxcomplete#Complete
+
+	if version >= 703
+		if has("win32")
+			set undodir=~/vimfiles/undodir
+		else
+			set undodir=~/.vim/undodir
+		endif
+		set undofile
+		set undolevels=1000
+		set undoreload=10000
+	endif
 
 	" Color scheme
 	if has("win32") && !has("gui_running")
