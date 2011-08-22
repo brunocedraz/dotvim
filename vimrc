@@ -1,4 +1,4 @@
-" Last Modified: dom 10 jul 2011 12:37:37  E. South America Standard Time
+" Last Modified: Sun 21 Aug 2011 10:11:20 PM BRT
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -131,6 +131,10 @@ else
 	if has("gui_running")
 		if has("win32")
 			set guifont=DejaVu_Sans_Mono:h10:cANSI
+		else
+			if has("mac")
+				set gfn=Menlo:h14
+			endif
 		endif
 		set guioptions-=T
 		set guioptions-=L
