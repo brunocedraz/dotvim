@@ -1,4 +1,4 @@
-" Last Modified: dom 10 jul 2011 12:37:37  E. South America Standard Time
+" Last Modified: qua 09 nov 2011 10:41:01  Horário brasileiro de verão
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -108,8 +108,9 @@ else
 	else
 		set t_Co=256
 		if has("gui_running")
-			colorscheme blackboard
-			"colorscheme zenburn
+			"colorscheme blackboard
+			let g:zenburn_high_Contrast = 1
+			colorscheme zenburn
 		else
 			let g:zenburn_high_Contrast = 1
 			colorscheme zenburn
@@ -150,7 +151,7 @@ else
 	" Various autocmd statements
 	if has("autocmd")
 		autocmd BufRead *.{h,hpp,i} setlocal ft=cpp
-		autocmd Filetype c,cpp,java,python,matlab setlocal tabstop=4 shiftwidth=4 expandtab
+		autocmd Filetype c,cpp,java,python,r,matlab setlocal tabstop=4 shiftwidth=4 expandtab
 		autocmd Filetype c,cpp setlocal foldmethod=syntax
 		autocmd Filetype xml,html,xhtml,css setlocal shiftwidth=2 expandtab
 		autocmd BufEnter *.{c,cpp} let b:fswitchdst = 'h,hpp' | let b:fswitchlocs = 'reg:/^\(.*\)src/\1include/'
