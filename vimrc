@@ -1,4 +1,4 @@
-" Last Modified: qui 16 fev 2012 12:07:26  E. South America Daylight Time. South America Daylight Time
+" Last Modified: qui 16 fev 2012 12:27:31  E. South America Daylight Time
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -31,7 +31,6 @@
 " == SOME INSTALLED PLUGINS (updated 2011.06.23) ==
 " Align - \ts, \t=        ...Align programming statements
 " DoxygenToolkit - :Dox   ...Over function to write api documentation
-" delimitMate             ...Auto completes (, ", etc, with corresponding pair
 " EnhancedCommentify      ...Needed by Nerd_commenter
 " NERD_commenter - \c     ...Toogles comments
 " NERD_tree - <C-F5>      ...Shows file tree
