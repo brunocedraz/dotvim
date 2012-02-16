@@ -1,4 +1,4 @@
-" Last Modified: seg 17 out 2011 01:09:38  E. South America Daylight Time
+" Last Modified: qui 16 fev 2012 12:07:26  E. South America Daylight Time. South America Daylight Time
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -155,7 +155,7 @@ else
 	" Various autocmd statements
 	if has("autocmd")
 		autocmd BufRead *.{h,hpp,i} setlocal ft=cpp
-		autocmd Filetype c,cpp,java,python,matlab setlocal tabstop=4 shiftwidth=4 expandtab
+		autocmd Filetype c,cpp,java,python,r,matlab setlocal tabstop=4 shiftwidth=4 expandtab
 		autocmd Filetype c,cpp setlocal foldmethod=syntax
 		autocmd Filetype xml,html,xhtml,css setlocal shiftwidth=2 expandtab
 		autocmd BufEnter *.{c,cpp} let b:fswitchdst = 'h,hpp' | let b:fswitchlocs = 'reg:/^\(.*\)src/\1include/'
