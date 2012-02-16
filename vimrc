@@ -1,4 +1,4 @@
-" Last Modified: Sun 21 Aug 2011 10:11:20 PM BRT
+" Last Modified: seg 17 out 2011 01:09:38  E. South America Daylight Time
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -108,8 +108,9 @@ else
 	else
 		set t_Co=256
 		if has("gui_running")
-			colorscheme blackboard
-			"colorscheme zenburn
+			"colorscheme blackboard
+			let g:zenburn_high_Contrast = 1
+			colorscheme zenburn
 		else
 			let g:zenburn_high_Contrast = 1
 			colorscheme zenburn
