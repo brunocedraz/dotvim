@@ -9,7 +9,7 @@
 	url = git://github.com/hrp/EnhancedCommentify.git
 [submodule "bundle/vim-matchit"]
 	path = bundle/vim-matchit
-	url = git://github.com/mhz/vim-matchit.git
+	url = git://github.com/tsaleh/vim-matchit.git
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
 	url = git://github.com/msanders/snipmate.vim.git
