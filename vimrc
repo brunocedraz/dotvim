@@ -1,4 +1,4 @@
-" Last Modified: qui 16 fev 2012 12:27:31  E. South America Daylight Time
+" Last Modified: qui 01 mar 2012 12:19:08  E. South America Standard Time
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -30,6 +30,7 @@
 "
 " == SOME INSTALLED PLUGINS (updated 2011.06.23) ==
 " Align - \ts, \t=        ...Align programming statements
+" AutoFenc                ...Automatic Encoding Detection
 " DoxygenToolkit - :Dox   ...Over function to write api documentation
 " EnhancedCommentify      ...Needed by Nerd_commenter
 " NERD_commenter - \c     ...Toogles comments
