@@ -64,3 +64,6 @@
 [submodule "bundle/vim-shell"]
 	path = bundle/vim-shell
 	url = git://github.com/xolox/vim-shell.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
