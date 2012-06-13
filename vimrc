@@ -1,4 +1,4 @@
-" Last Modified: qui 01 mar 2012 12:19:08  E. South America Standard Time
+" Last Modified: Wed 13 Jun 2012 07:57:58 PM BRT
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -115,6 +115,9 @@ else
 			let g:zenburn_high_Contrast = 1
 			colorscheme zenburn
 		endif
+	endif
+	if has("gui_macvim")
+		set clipboard=unnamed
 	endif
 
 
