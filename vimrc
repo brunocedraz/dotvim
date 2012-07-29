@@ -1,4 +1,4 @@
-" Last Modified: Wed 13 Jun 2012 07:57:58 PM BRT
+" Last Modified: Sun 29 Jul 2012 10:49:24 AM BRT
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -37,6 +37,7 @@
 " NERD_tree - <C-F5>      ...Shows file tree
 " fswitch - \sf           ...Toogles between companion files (.cpp/.cc/.c - .h/.hpp)
 " fuf - \ff               ...FuzzyFinder
+" gundo - GundoToggle     ...Toogles undo tree view
 " matchit                 ...Extends % to match html tags, etc
 " minibufexpl             ...Shows window with buffer list
 " shell - F6/F11          ...Open files / Fullscreen
