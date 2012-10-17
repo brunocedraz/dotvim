@@ -1,4 +1,4 @@
-" Last Modified: Sun 29 Jul 2012 10:49:24 AM BRT
+" Last Modified: Wed 17 Oct 2012 02:21:41 PM BRT
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -155,11 +155,10 @@ else
 		set laststatus=2
 	endif
 
-
 	" Various autocmd statements
 	if has("autocmd")
 		autocmd BufRead *.{h,hpp,i} setlocal ft=cpp
-		autocmd Filetype c,cpp,java,python,r,matlab setlocal tabstop=4 shiftwidth=4 expandtab
+		autocmd Filetype c,cpp,java,python,r,matlab setlocal tabstop=8 shiftwidth=4 softtabstop=4 expandtab
 		autocmd Filetype c,cpp setlocal foldmethod=syntax
 		autocmd Filetype xml,html,xhtml,css setlocal shiftwidth=2 expandtab
 		autocmd BufEnter *.{c,cpp} let b:fswitchdst = 'h,hpp' | let b:fswitchlocs = 'reg:/^\(.*\)src/\1include/'
