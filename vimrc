@@ -1,4 +1,4 @@
-" Last Modified: Wed 17 Oct 2012 02:21:41 PM BRT
+" Last Modified: Tue 23 Oct 2012 12:32:55 PM BRST
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -24,7 +24,7 @@
 "  2. '<C-o>' returns from 'gf'
 "  3. Copy/Paste on gvim: "+y / "+gP (ctrl-insert/shift-insert also)
 "  4. Mark characters beyond 80 cols: :match Todo '\%80v.*'
-"  5. 'zR' expand all folds
+"  5. 'zR' expand all folds, 'zM' closes all
 "  6. <C-p> <C-n> complete with previous/next token
 "     <C-x> <C-o> complete from ctags file
 "
@@ -159,7 +159,9 @@ else
 	if has("autocmd")
 		autocmd BufRead *.{h,hpp,i} setlocal ft=cpp
 		autocmd Filetype c,cpp,java,python,r,matlab setlocal tabstop=8 shiftwidth=4 softtabstop=4 expandtab
-		autocmd Filetype c,cpp setlocal foldmethod=syntax
+		autocmd Filetype c,cpp setlocal foldmethod=syntax foldlevel=0 
+		autocmd Filetype python setlocal foldmethod=indent foldnestmax=1 foldlevel=0 
+		autocmd BufRead *.py normal! zR<cr> 
 		autocmd Filetype xml,html,xhtml,css setlocal shiftwidth=2 expandtab
 		autocmd BufEnter *.{c,cpp} let b:fswitchdst = 'h,hpp' | let b:fswitchlocs = 'reg:/^\(.*\)src/\1include/'
 		autocmd BufEnter *.{h,hpp} let b:fswitchdst = 'cpp,c' | let b:fswitchlocs = 'reg:/^\(.*\)include/\1src/'
