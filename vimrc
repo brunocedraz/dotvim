@@ -1,4 +1,4 @@
-" Last Modified: Tue 23 Oct 2012 12:32:55 PM BRST
+" Last Modified: Tue 23 Oct 2012 11:35:48 PM BRST
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -160,11 +160,11 @@ else
 		autocmd BufRead *.{h,hpp,i} setlocal ft=cpp
 		autocmd Filetype c,cpp,java,python,r,matlab setlocal tabstop=8 shiftwidth=4 softtabstop=4 expandtab
 		autocmd Filetype c,cpp setlocal foldmethod=syntax foldlevel=0 
-		autocmd Filetype python setlocal foldmethod=indent foldnestmax=1 foldlevel=0 
-		autocmd BufRead *.py normal! zR<cr> 
-		autocmd Filetype xml,html,xhtml,css setlocal shiftwidth=2 expandtab
 		autocmd BufEnter *.{c,cpp} let b:fswitchdst = 'h,hpp' | let b:fswitchlocs = 'reg:/^\(.*\)src/\1include/'
 		autocmd BufEnter *.{h,hpp} let b:fswitchdst = 'cpp,c' | let b:fswitchlocs = 'reg:/^\(.*\)include/\1src/'
+		autocmd Filetype python setlocal foldmethod=indent foldnestmax=1 foldlevel=0
+		autocmd BufRead *.py normal zR<cr> 
+		autocmd Filetype xml,html,xhtml,css setlocal shiftwidth=2 expandtab
 		autocmd WinEnter * setlocal cursorline
 		autocmd WinLeave * setlocal nocursorline
 		autocmd BufRead,BufNewFile *.g set syntax=antlr3
@@ -240,12 +240,12 @@ else
 	" noremap <Down> gj
 	" inoremap <Up> <C-O>gk
 	" inoremap <Down> <C-O>gj
-	map <silent> <C-F5> :NERDTreeToggle<cr>
-	map <silent> <C-F8> :TlistToggle<cr>
+	noremap <silent> <C-F5> :NERDTreeToggle<cr>
+	noremap <silent> <C-F8> :TlistToggle<cr>
 	nnoremap <silent> <C-F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
-	map <silent> <C-F9> :make<cr>:copen<cr>
-	map <silent> <C-F12> :call <SID>UpdateTagsCscope()<cr>
-	nmap <silent> <Leader>sf :FSHere<cr>
+	noremap <silent> <C-F9> :make<cr>:copen<cr>
+	noremap <silent> <C-F12> :call <SID>UpdateTagsCscope()<cr>
+	nnoremap <silent> <Leader>sf :FSHere<cr>
 	nnoremap <silent> <Leader>ff :FufFile<cr>
 	nnoremap <silent> <Leader>fb :FufBuffer<cr>
 	nnoremap <silent> <Leader>fd :FufDir<cr>
@@ -254,8 +254,8 @@ else
 	nnoremap <silent> <Leader>fq :FufQuickfix<cr>
 	nnoremap <silent> <Leader>fl :FufLine<cr>
 	nnoremap <silent> <Leader>fh :FufHelp<cr>
-	map <silent> <Leader>[ :MBEbp<cr>
-	map <silent> <Leader>] :MBEbn<cr>
+	noremap <silent> <Leader>[ :MBEbp<cr>
+	noremap <silent> <Leader>] :MBEbn<cr>
 	vnoremap > >gv
 	vnoremap < <gv
 	if has("autocmd")
