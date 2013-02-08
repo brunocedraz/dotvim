@@ -1,4 +1,4 @@
-" Last Modified: Tue 23 Oct 2012 11:35:48 PM BRST
+" Last Modified: Fri 08 Feb 2013 05:50:23 PM BRST
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -261,4 +261,9 @@ else
 	if has("autocmd")
 		autocmd FileType python map <silent> <buffer> <leader><space> :w!<cr>:!python %<cr>
 	endif
+	
+	" Switching DiffOrig from http://stackoverflow.com/questions/6426154/taking-a-quick-look-at-difforig-then-switching-back
+	command DiffOrig let g:diffline = line('.') | vert new | set bt=nofile | r # | 0d_ | diffthis | :exe "norm! ".g:diffline."G" | wincmd p | diffthis | wincmd p
+	nnoremap <Leader>do :DiffOrig<cr>
+	nnoremap <leader>dc :q<cr>:diffoff!<cr>:exe "norm! ".g:diffline."G"<cr>
 endif
