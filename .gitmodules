@@ -1,15 +1,9 @@
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/vim-fswitch"]
 	path = bundle/vim-fswitch
 	url = git://github.com/derekwyatt/vim-fswitch.git
 [submodule "bundle/EnhancedCommentify"]
 	path = bundle/EnhancedCommentify
 	url = git://github.com/hrp/EnhancedCommentify.git
-[submodule "bundle/vim-matchit"]
-	path = bundle/vim-matchit
-	url = git://github.com/tsaleh/vim-matchit.git
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
 	url = git://github.com/msanders/snipmate.vim.git
@@ -34,9 +28,6 @@
 [submodule "bundle/vim-align"]
 	path = bundle/vim-align
 	url = git://github.com/tsaleh/vim-align.git
-[submodule "bundle/blackboard.vim"]
-	path = bundle/blackboard.vim
-	url = git://github.com/vim-scripts/blackboard.vim.git
 [submodule "bundle/DoxygenToolkit.vim"]
 	path = bundle/DoxygenToolkit.vim
 	url = git://github.com/vim-scripts/DoxygenToolkit.vim.git
@@ -52,15 +43,9 @@
 [submodule "bundle/timestamp.vim"]
 	path = bundle/timestamp.vim
 	url = git://github.com/vim-scripts/timestamp.vim.git
-[submodule "bundle/VisIncr"]
-	path = bundle/VisIncr
-	url = git://github.com/vim-scripts/VisIncr.git
 [submodule "bundle/Zenburn"]
 	path = bundle/Zenburn
 	url = git://github.com/vim-scripts/Zenburn.git
-[submodule "bundle/vim-irblack"]
-	path = bundle/vim-irblack
-	url = git://github.com/wgibbs/vim-irblack.git
 [submodule "bundle/vim-shell"]
 	path = bundle/vim-shell
 	url = git://github.com/xolox/vim-shell.git
