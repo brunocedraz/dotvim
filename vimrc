@@ -1,4 +1,4 @@
-" Last Modified: Sun 08 Mar 2015 03:15:42 PM BRT
+" Last Modified: Sun 08 Mar 2015 03:25:28 PM BRT
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -36,7 +36,6 @@
 " NERD_commenter - \c     ...Toogles comments
 " NERD_tree - <C-F5>      ...Shows file tree
 " fswitch - \sf           ...Toogles between companion files (.cpp/.cc/.c - .h/.hpp)
-" fuf - \ff               ...FuzzyFinder
 " gundo - GundoToggle     ...Toogles undo tree view
 " matchit                 ...Extends % to match html tags, etc
 " minibufexpl             ...Shows window with buffer list
@@ -45,7 +44,6 @@
 " snipMate                ...Code snippets
 " taglist - <C-F8>        ...Displays window with file tags (ectags)
 " timestamp               ...Automatically changes timestamps upon save
-" visincr - :I            ...With a column marked, create increasing number/date sequence
 
 
 " General settings
@@ -82,7 +80,6 @@ else
 	endif
         call pathogen#helptags()
 	call pathogen#infect()
-        "call pathogen#runtime_append_all_bundles()
 	filetype on
 	filetype plugin on
 	filetype indent on
@@ -259,14 +256,6 @@ else
 	noremap <silent> <C-F9> :make<cr>:copen<cr>
 	noremap <silent> <C-F12> :call <SID>UpdateTagsCscope()<cr>
 	nnoremap <silent> <Leader>sf :FSHere<cr>
-"	nnoremap <silent> <Leader>ff :FufFile<cr>
-"	nnoremap <silent> <Leader>fb :FufBuffer<cr>
-"	nnoremap <silent> <Leader>fd :FufDir<cr>
-"	nnoremap <silent> <Leader>fc :FufMruCmd<cr>
-"	nnoremap <silent> <Leader>ft :FufTag<cr>
-"	nnoremap <silent> <Leader>fq :FufQuickfix<cr>
-"	nnoremap <silent> <Leader>fl :FufLine<cr>
-"	nnoremap <silent> <Leader>fh :FufHelp<cr>
 	noremap <silent> <Leader>[ :MBEbp<cr>
 	noremap <silent> <Leader>] :MBEbn<cr>
 	vnoremap > >gv
