@@ -1,4 +1,4 @@
-" Last Modified: Fri 08 Feb 2013 05:50:23 PM BRST
+" Last Modified: Sun 08 Mar 2015 03:15:42 PM BRT
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -81,7 +81,8 @@ else
 		let g:pathogen_disabled=['taglist.vim', 'custom']
 	endif
         call pathogen#helptags()
-        call pathogen#runtime_append_all_bundles()
+	call pathogen#infect()
+        "call pathogen#runtime_append_all_bundles()
 	filetype on
 	filetype plugin on
 	filetype indent on
@@ -195,6 +196,18 @@ else
         " TagList plugin
 	let Tlist_Use_Right_Window = 1
 
+	" MozRepl integration
+	function! RefreshFirefox()
+		if &modified
+			write
+			silent !echo 'vimYo = content.window.pageYOffset;
+				\ vimXo = content.window.pageXOffset;
+				\ BrowserReload();
+				\ content.window.scrollTo(vimXo,vimYo);
+				\ repl.quit();'  |
+				\ nc -w 1 localhost 4242 2>&1 > /dev/null
+		endif
+	endfunction
 
 	" Configure ctags/cscope database
 	function! s:UpdateTagsCscope()
@@ -246,14 +259,14 @@ else
 	noremap <silent> <C-F9> :make<cr>:copen<cr>
 	noremap <silent> <C-F12> :call <SID>UpdateTagsCscope()<cr>
 	nnoremap <silent> <Leader>sf :FSHere<cr>
-	nnoremap <silent> <Leader>ff :FufFile<cr>
-	nnoremap <silent> <Leader>fb :FufBuffer<cr>
-	nnoremap <silent> <Leader>fd :FufDir<cr>
-	nnoremap <silent> <Leader>fc :FufMruCmd<cr>
-	nnoremap <silent> <Leader>ft :FufTag<cr>
-	nnoremap <silent> <Leader>fq :FufQuickfix<cr>
-	nnoremap <silent> <Leader>fl :FufLine<cr>
-	nnoremap <silent> <Leader>fh :FufHelp<cr>
+"	nnoremap <silent> <Leader>ff :FufFile<cr>
+"	nnoremap <silent> <Leader>fb :FufBuffer<cr>
+"	nnoremap <silent> <Leader>fd :FufDir<cr>
+"	nnoremap <silent> <Leader>fc :FufMruCmd<cr>
+"	nnoremap <silent> <Leader>ft :FufTag<cr>
+"	nnoremap <silent> <Leader>fq :FufQuickfix<cr>
+"	nnoremap <silent> <Leader>fl :FufLine<cr>
+"	nnoremap <silent> <Leader>fh :FufHelp<cr>
 	noremap <silent> <Leader>[ :MBEbp<cr>
 	noremap <silent> <Leader>] :MBEbn<cr>
 	vnoremap > >gv
