@@ -1,29 +1,67 @@
-Installation
-============
+VIM editor settings readme
 
-1. Clone
-  linux:
-	git clone git://github.com/brunocedraz/dotvim.git ~/.vim
-
-  windows (git bash):
-	git clone git://github.com/brunocedraz/dotvim.git ~/vimfiles
+Last modified: Sat 29 Jul 2017 03:19:16 PM -03
 
 
-2. Create symlink
-  linux:
-	ln -s ~/.vim/vimrc ~/.vimrc
+Overview
+========
 
-  windows (cmd):
- 	mklink .vimrc vimfiles\vimrc
+Multi-platform vim configuration focused mostly on C and Python programming.
+
+- Alternate between buffers with:
+  \[ or \]
+
+- Alternate between .cpp/.cc/.c and .h/.hpp files with:
+  \sf
+
+- Comment/uncomment lines with:
+  \c
+
+- Execute the current python file with:
+  \<space>
+
+- Insert C code snipets with:
+  inc<tab>
+  main<tab>
+
+- Automatically updates 'last modified' timestamps on save.
+
+- Uses zenburn colorscheme when possible.
 
 
-3. Load submodules
-  linux:
-	cd ~/.vim
-	git submodule init
-	git submodule update
+Installation under Linux (Ubuntu)
+=================================
 
-  windows (git bash):
-	cd ~/vimfiles
-	git submodule init
-	git submodule update
+Open the terminal and run the following commands:
+
+    sudo apt install git vim cscope exuberant-ctags python-pyflakes
+    git clone git://github.com/brunocedraz/dotvim.git ~/.vim
+    ln -s ~/.vim/vimrc ~/.vimrc
+    cd ~/.vim
+    git submodule init
+    git submodule update
+
+
+Installation under Windows 7+ 64bit (cmd)
+=========================================
+
+Install the following software:
+  
+- gvim80.exe from http://www.vim.org
+- Git-2.13.3-64-bit.exe from https://git-scm.com/download/win
+- dejavu-fonts-ttf-2.37.zip from https://dejavu-fonts.github.io/Download.html
+- cscope-15.8a-win64rev1-static.zip from https://code.google.com/archive/p/cscope-win32/downloads
+- ctags58.zip from http://ctags.sourceforge.net/
+- Python 2.7.13 from https://www.python.org
+
+Then open a command window (cmd) and run the following commands:
+
+    cd %USERPROFILE%
+    git clone git://github.com/brunocedraz/dotvim.git ~/vimfiles
+    mklink .vimrc vimfiles\vimrc
+    cd vimfiles
+    git submodule init
+    git submodule update
+    pip install pyflakes
+
+

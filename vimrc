@@ -1,4 +1,4 @@
-" Last Modified: Sun 08 Mar 2015 03:37:04 PM BRT
+" Last Modified: Sat 29 Jul 2017 03:17:41 PM -03
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -7,7 +7,6 @@
 "    cscope
 "    exuberant-ctags
 "    pyflakes
-"    wmctrl (for the shell plugin)
 "
 "  2 Windows - on windows use vimfiles instead of .vim. Requirements are:
 "    VIM 7.3 (official distribution)
@@ -38,7 +37,6 @@
 " fswitch - \sf           ...Toogles between companion files (.cpp/.cc/.c - .h/.hpp)
 " gundo - GundoToggle     ...Toogles undo tree view
 " minibufexpl             ...Shows window with buffer list
-" shell - F6/F11          ...Open files / Fullscreen
 " sparkup - <C-e>         ...Zencoding. Tutorial: https://github.com/rstacruz/sparkup
 " snipMate                ...Code snippets
 " taglist - <C-F8>        ...Displays window with file tags (ectags)
@@ -251,7 +249,6 @@ else
 	" inoremap <Down> <C-O>gj
 	noremap <silent> <C-F5> :NERDTreeToggle<cr>
 	noremap <silent> <C-F8> :TlistToggle<cr>
-	nnoremap <silent> <C-F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
 	noremap <silent> <C-F9> :make<cr>:copen<cr>
 	noremap <silent> <C-F12> :call <SID>UpdateTagsCscope()<cr>
 	nnoremap <silent> <Leader>sf :FSHere<cr>
