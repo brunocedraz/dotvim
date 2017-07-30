@@ -1,6 +1,6 @@
 VIM editor settings readme
 
-Last modified: Sat 29 Jul 2017 03:19:16 PM -03
+Last modified: Sun 30 Jul 2017 02:10:00 PM -03
 
 
 Overview
@@ -64,4 +64,74 @@ Then open a command window (cmd) and run the following commands:
     git submodule update
     pip install pyflakes
 
+
+License
+=======
+
+The .vim is a public domain work, dedicated using CC0 1.0.
+Feel free to do whatever you want with it.
+
+The linked vim scripts are subject to their own licenses.
+The relevant licenses can be located in the LICENSES file.
+Here you have the list of all projects. 
+
+AutoFenc by Petr Zemek
+  https://github.com/vim-scripts/AutoFenc
+
+DoxygenToolkit.vim by Mathias Lorente
+  https://github.com/vim-scripts/DoxygenToolkit.vim
+
+EnhancedCommentify by Meikel Brandmeyer
+  https://github.com/hrp/EnhancedCommentify 
+
+Pathogen.vim by Tim Pope
+  http://www.vim.org/scripts/script.php?script_id=2332
+
+Zenburn by Zani Nurminen
+  https://github.com/vim-scripts/Zenburn 
+
+ctrlp.vim by kien
+  https://github.com/kien/ctrlp.vim 
+
+gundo.vim by Steve Losh
+  https://github.com/sjl/gundo.vim
+
+minibufexpl.vim by bindu wavell
+  https://github.com/vim-scripts/minibufexpl.vim 
+
+nerdcommenter by Marty Grenfell
+  https://github.com/scrooloose/nerdcommenter 
+
+nerdtree by Marty Grenfell
+  https://github.com/scrooloose/nerdtree 
+
+snipmate.vim by Michael Sanders
+  https://github.com/msanders/snipmate.vim 
+
+syntastic by Marty Grenfell
+  https://github.com/vim-syntastic/syntastic 
+
+taglist.vim by Yegappan Lakshmanan
+  https://github.com/vim-scripts/taglist.vim 
+
+timestamp.vim by Gautam Iyer
+  https://github.com/vim-scripts/timestamp.vim 
+
+vim-align by Charles Campbell
+  https://github.com/tsaleh/vim-align 
+
+vim-fswitch by Derek Wyatt
+  https://github.com/derekwyatt/vim-fswitch 
+
+vim-l9 by Takeshi Nishida
+  https://github.com/slack/vim-l9 
+
+vim-shell by Peter Odding
+  https://github.com/xolox/vim-shell 
+
+vim-sparkup by Rico Sta (changes by bingaman, sfl)
+  https://github.com/sjl/vim-sparkup 
+
+vim-surround by Tim Pope
+  https://github.com/tpope/vim-surround 
 
