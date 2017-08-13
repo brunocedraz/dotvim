@@ -1,4 +1,4 @@
-" Last Modified: Sat 29 Jul 2017 03:17:41 PM -03
+" Last Modified: Sun 13 Aug 2017 03:06:06 PM -03
 "
 " == INSTALL ==
 "  1 Linux - This .vimrc/.vim requires on linux:
@@ -185,6 +185,10 @@ else
 	let g:miniBufExplModSelTarget = 1
 	let g:miniBuffExplUseSingleClick = 1
 	let g:miniBuffExplForceSyntaxEnable = 1
+
+
+	" Syntastic plugin
+	let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 
         " TagList plugin
